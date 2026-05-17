@@ -7,8 +7,6 @@ public class AnimeManager
 {
     public static void main(String[] args) throws IOException
     {
-        int counter1 = 0;
-        int counter2 = 0;
         ArrayList<Anime> Names = new ArrayList<>();
         Scanner sc = new Scanner(new File("C:\\Users\\ethan\\OneDrive\\Documents\\Text\\anime.txt"));
 
@@ -30,11 +28,10 @@ public class AnimeManager
         for (Anime item : Names)
         {
             System.out.println(item.getName());
-            counter1++;
         }
 
         System.out.println();
-        System.out.println("There are currently " + counter1 + " animes in this list.");
+        System.out.println("There are currently " + Names.size() + " animes in this list.");
 
         System.out.println();
         System.out.println();
@@ -59,9 +56,8 @@ public class AnimeManager
         for (Anime item : Names)
         {
             System.out.println(item.getName());
-            counter2++;
         }
         System.out.println();
-        System.out.println("There are currently " + counter2 + " animes in this list.");
+        System.out.println("There are currently " + Names.size() + " animes in this list.");
     }
 }
