@@ -45,6 +45,7 @@ public class AnimeManager
                 {
                     System.out.println("Removing dupes of " + names.get(i) + "!");
                     names.remove(j);
+                    i--;
                 }
             }
         }
@@ -59,5 +60,7 @@ public class AnimeManager
         }
         System.out.println();
         System.out.println("There are currently " + names.size() + " anime in this list.");
+
+        sc.close();
     }
 }
