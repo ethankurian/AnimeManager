@@ -15,7 +15,5 @@ Built using Java and AP CSA concepts.
 ## Future Goals
 - Add menu system
 - Update .txt file automatically
-- Ignore capitalization duplicates
-- Trim trailing spaces on each line
 
 Feel free to suggest changes!
