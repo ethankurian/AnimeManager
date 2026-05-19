@@ -7,7 +7,7 @@ public class AnimeManager
 {
     public static void main(String[] args) throws IOException
     {
-        ArrayList<Anime> Names = new ArrayList<>();
+        ArrayList<Anime> names = new ArrayList<>();
         Scanner sc = new Scanner(new File("C:\\Users\\ethan\\OneDrive\\Documents\\Text\\anime.txt"));
 
         for (int i = 0; i < 7; i++)
@@ -20,31 +20,31 @@ public class AnimeManager
             if (line.equals("etc...")) {
                 break;
             }
-            Names.add(new Anime(line));
+            names.add(new Anime(line));
         }
 
         System.out.println();
 
-        for (Anime item : Names)
+        for (Anime item : names)
         {
-            System.out.println(item.getName());
+            System.out.println(item);
         }
 
         System.out.println();
-        System.out.println("There are currently " + Names.size() + " animes in this list.");
+        System.out.println("There are currently " + names.size() + " anime in this list.");
 
         System.out.println();
         System.out.println();
 
 
-        for (int i = Names.size() - 1; i > 0; i--)
+        for (int i = names.size() - 1; i > 0; i--)
         {
             for (int j = i - 1; j >= 0; j--)
             {
-                if (Names.get(i).getName().equals(Names.get(j).getName()))
+                if (names.get(i).getName().equals(names.get(j).getName()))
                 {
-                    System.out.println("Removing dupes of " + Names.get(i) + "!");
-                    Names.remove(j);
+                    System.out.println("Removing dupes of " + names.get(i) + "!");
+                    names.remove(j);
                 }
             }
         }
@@ -53,11 +53,11 @@ public class AnimeManager
         System.out.println();
 
 
-        for (Anime item : Names)
+        for (Anime item : names)
         {
-            System.out.println(item.getName());
+            System.out.println(item);
         }
         System.out.println();
-        System.out.println("There are currently " + Names.size() + " animes in this list.");
+        System.out.println("There are currently " + names.size() + " anime in this list.");
     }
 }

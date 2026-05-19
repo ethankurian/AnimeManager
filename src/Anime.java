@@ -10,17 +10,19 @@ public class Anime
     public String getName()
     {
         String chunk;
-        String last = name.substring(name.length() - 2);
-        if (last.equals(" +") || last.equals(" -") || last.equals(" ~") || last.equals(" *"))
-        {
-            chunk = name.substring(0, name.length() - 2);
-            return chunk;
+        if (name.length() > 2) {
+            String last = name.substring(name.length() - 2);
+            if (last.equals(" +") || last.equals(" -") || last.equals(" ~") || last.equals(" *")) {
+                chunk = name.substring(0, name.length() - 2);
+                return chunk;
+            }
+            return name;
         }
         return name;
     }
 
     public String toString()
         {
-            return name;
+            return getName();
         }
 }
