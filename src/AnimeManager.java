@@ -16,7 +16,7 @@ public class AnimeManager
         }
 
         while(sc.hasNextLine()) {
-            String line = sc.nextLine();
+            String line = sc.nextLine().toLowerCase().trim();
             if (line.equals("etc...")) {
                 break;
             }
