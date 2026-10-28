@@ -8,7 +8,7 @@ public class AnimeManager
     public static void main(String[] args) throws IOException
     {
         ArrayList<Anime> names = new ArrayList<>();
-        Scanner sc = new Scanner(new File("C:\\Users\\ethan\\OneDrive\\Documents\\Text\\anime.txt"));
+        Scanner sc = new Scanner(new File("anime.txt"));
 
         for (int i = 0; i < 7; i++)
         {
